@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Produção Sustentável</title>
+    <style>
+        /* ====== Estilos Básicos ====== */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f6f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        nav {
+            background-color: #2E7D32;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+
+        nav a:hover {
+            background-color: #1B5E20;
+            border-radius: 5px;
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h1, h2, h3 {
+            color: #2E7D32;
+        }
+
+        .intro, .tips, .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            flex: 1 1 calc(33% - 40px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #388E3C;
+        }
+
+        footer {
+            background-color: #2E7D32;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        @media(max-width: 900px){
+            .intro, .tips, .projects {
+                flex-direction: column;
+            }
+            .card {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Agrinho 2026</h1>
+        <p>Produção Sustentável e Correta para um Futuro Verde</p>
+    </header>
+
+    <!-- NAVIGAÇÃO -->
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#dicas">Dicas de Produção</a>
+        <a href="#projetos">Projetos Sustentáveis</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <!-- SOBRE -->
+    <section id="sobre">
+        <h2>Sobre a Produção Sustentável</h2>
+        <p>O Agrinho 2026 promove técnicas agrícolas que respeitam o meio ambiente, garantem a produtividade e protegem a saúde do solo e da comunidade. A produção correta não é só cuidar das plantações, mas também pensar no futuro.</p>
+    </section>
+
+    <!-- DICAS DE PRODUÇÃO -->
+    <section id="dicas">
+        <h2>Dicas de Produção Sustentável</h2>
+        <div class="tips">
+            <div class="card">
+                <h3>Rotação de Culturas</h3>
+                <p>Evita o esgotamento do solo e aumenta a diversidade biológica.</p>
+            </div>
+            <div class="card">
+                <h3>Irrigação Inteligente</h3>
+                <p>Economiza água e garante que as plantas recebam a quantidade correta.</p>
+            </div>
+            <div class="card">
+                <h3>Uso Responsável de Fertilizantes</h3>
+                <p>Aplica apenas o necessário para proteger o solo e os rios.</p>
+            </div>
+            <div class="card">
+                <h3>Energia Renovável</h3>
+                <p>Uso de painéis solares ou biomassa para reduzir a pegada ambiental.</p>
+            </div>
+            <div class="card">
+                <h3>Controle Biológico de Pragas</h3>
+                <p>Substitui pesticidas químicos por inimigos naturais das pragas.</p>
+            </div>
+            <div class="card">
+                <h3>Respeito à Biodiversidade</h3>
+                <p>Preserva árvores, riachos e espécies nativas no entorno das plantações.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETOS SUSTENTÁVEIS -->
+    <section id="projetos">
+        <h2>Projetos Sustentáveis do Agrinho</h2>
+        <div class="projects">
+            <div class="card">
+                <img src="horta-comunitaria.jpg" alt="Horta Comunitária">
+                <h3>Horta Comunitária</h3>
+                <p>Produção de alimentos saudáveis e educação ambiental para a comunidade.</p>
+            </div>
+            <div class="card">
+                <img src="solo-vivo.jpg" alt="Solo Vivo">
+                <h3>Projeto Solo Vivo</h3>
+                <p>Recuperação de solos degradados usando técnicas naturais e corretas.</p>
+            </div>
+            <div class="card">
+                <img src="agrotech.jpg" alt="Agrotech Verde">
+                <h3>Agrotech Verde</h3>
+                <p>Aplicação de tecnologias digitais para monitoramento sustentável das plantações.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <form>
+            <input type="text" name="nome" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu Email" required>
+            <textarea name="mensagem" rows="5" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Agrinho. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
