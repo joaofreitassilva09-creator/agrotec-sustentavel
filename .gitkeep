@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Produção Sustentável</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8f5;
+            color: #333;
+        }
+        header {
+            background-color: #2E7D32;
+            color: white;
+            padding: 25px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 5px;
+        }
+        nav {
+            background-color: #388E3C;
+            display: flex;
+            justify-content: center;
+            padding: 12px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #FFEB3B;
+        }
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        section {
+            margin-bottom: 50px;
+        }
+        section h2 {
+            color: #2E7D32;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            flex: 1 1 calc(33% - 40px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        footer {
+            background-color: #2E7D32;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Responsividade */
+        @media(max-width: 900px){
+            .card {
+                flex: 1 1 calc(50% - 40px);
+            }
+        }
+        @media(max-width: 600px){
+            nav {
+                flex-direction: column;
+            }
+            .card {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Agrinho 2026</h1>
+        <p>Produção Sustentável: Educação e Cidadania</p>
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#praticas">Práticas Sustentáveis</a>
+        <a href="#exemplos">Exemplos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <main>
+        <section id="sobre">
+            <h2>Sobre Produção Sustentável</h2>
+            <p>A produção sustentável busca equilibrar a geração de alimentos, produtos e serviços com a preservação do meio ambiente, garantindo recursos para o futuro e promovendo uma sociedade mais consciente.</p>
+        </section>
+
+        <section id="praticas">
+            <h2>Práticas Sustentáveis</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Rotação de Culturas</h3>
+                    <p>Alternar o plantio de diferentes culturas ajuda a conservar o solo e reduzir pragas e doenças, mantendo a produtividade.</p>
+                </div>
+                <div class="card">
+                    <h3>Uso Responsável da Água</h3>
+                    <p>Implementar sistemas de irrigação eficientes e coletar água da chuva para reduzir o desperdício.</p>
+                </div>
+                <div class="card">
+                    <h3>Energia Renovável</h3>
+                    <p>Utilizar fontes de energia como solar e eólica para diminuir a emissão de gases poluentes.</p>
+                </div>
+                <div class="card">
+                    <h3>Reciclagem e Compostagem</h3>
+                    <p>Aproveitar resíduos orgânicos para fertilização natural e materiais recicláveis para reduzir impacto ambiental.</p>
+                </div>
+                <div class="card">
+                    <h3>Agricultura Orgânica</h3>
+                    <p>Evitar pesticidas e produtos químicos, promovendo alimentos saudáveis e preservando a biodiversidade.</p>
+                </div>
+                <div class="card">
+                    <h3>Educação Ambiental</h3>
+                    <p>Conscientizar alunos e comunidade sobre a importância de práticas sustentáveis na vida cotidiana.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="exemplos">
+            <h2>Exemplos de Produção Sustentável</h2>
+            <ul>
+                <li>Hortas escolares com compostagem de resíduos.</li>
+                <li>Cooperativas de agricultores orgânicos locais.</li>
+                <li>Projetos de reaproveitamento de água na escola.</li>
+                <li>Feiras de troca de sementes e mudas regionais.</li>
+            </ul>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Email: contato@agrinho2026.com.br</p>
+            <p>Telefone: (00) 1234-5678</p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2026 Agrinho. Todos os direitos reservados.
+    </footer>
+</body>
+</html>
